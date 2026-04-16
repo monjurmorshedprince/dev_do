@@ -1,3 +1,4 @@
+import 'package:dev_do/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 class TaskManagerApp extends StatelessWidget {
@@ -5,6 +6,8 @@ class TaskManagerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: Scaffold());
+    return MaterialApp(
+      home: SplashScreen(),
+    );
   }
 }
