@@ -11,11 +11,33 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: BackgroundWidget(
         child: SafeArea(
-          child: Column(
-            children: [],
+          child: Padding(
+            padding: EdgeInsetsGeometry.all(16),
+            child: Column(
+              children: [
+                Form(
+                  child: Column(
+                    children: [
+                      SizedBox(height: 60),
+                      Text('Get started with'),
+                      TextFormField(
+                        decoration: InputDecoration(hintText: 'Email'),
+                      ),
+                      TextFormField(
+                        decoration: InputDecoration(hintText: 'Pass'),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {},
+                        child: Icon(Icons.arrow_circle_right_rounded),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
